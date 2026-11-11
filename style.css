@@ -1,0 +1,460 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaff;
+    color: #51445c;
+}
+
+/* ENCABEZADO */
+header {
+    background: white;
+    padding: 18px 5%;
+    box-shadow: 0 3px 15px #d9c8e555;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #c36bb0;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #655875;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #e58bbd;
+}
+
+/* INICIO */
+.hero {
+    min-height: 520px;
+    padding: 65px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    background: linear-gradient(120deg, #fce5f1, #e5e5ff, #dff3ff);
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.etiqueta,
+.section-title span,
+.promotions span,
+.about span,
+.team > span {
+    color: #c36bb0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 18px 0;
+    color: #55436b;
+}
+
+.hero h1 span {
+    color: #d66eac;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #71667d;
+}
+
+.hero-image img {
+    width: 390px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 45% 45% 25px 25px;
+    box-shadow: 0 12px 30px #a98bb955;
+}
+
+.btn {
+    display: inline-block;
+    background: #d978b5;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #9b7bc9;
+    transform: translateY(-3px);
+}
+
+/* SECCIONES */
+.section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    color: #665078;
+    margin: 12px 0;
+}
+
+.section-title p {
+    color: #887b91;
+    line-height: 1.7;
+}
+
+/* TARJETAS DE PRODUCTOS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px #bda9d52b;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #bda9d555;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3 {
+    color: #a55c9d;
+    margin: 15px 0 8px;
+}
+
+.card p {
+    color: #82778a;
+    font-size: 14px;
+    min-height: 45px;
+    line-height: 1.6;
+}
+
+.card strong {
+    display: block;
+    color: #5c8bc7;
+    font-size: 19px;
+    margin: 12px 0;
+}
+
+/* FONDOS ALTERNOS */
+.special {
+    background: #f6efff;
+}
+
+/* TARJETAS DE INFORMACIÓN */
+.info-card {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px #bda9d52b;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+}
+
+.info-card h3 {
+    color: #c36bb0;
+    margin-bottom: 15px;
+}
+
+.info-card h2 {
+    color: #648fc8;
+    margin: 12px 0;
+    font-size: 28px;
+}
+
+.info-card p {
+    color: #82778a;
+    line-height: 1.8;
+}
+
+.info-card strong {
+    display: block;
+    margin-top: 15px;
+    color: #a55c9d;
+}
+
+/* PREPARACIÓN */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.step {
+    background: #f9eafa;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.step span {
+    display: inline-block;
+    color: white;
+    background: #c77cb7;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    color: #665078;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #82778a;
+    line-height: 1.7;
+}
+
+/* PROMOCIONES Y DOMICILIOS */
+.promotions {
+    margin: 35px 8%;
+    padding: 45px;
+    border-radius: 25px;
+    background: linear-gradient(120deg, #f9ddec, #e1e6ff);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.promotions h2 {
+    font-size: 32px;
+    color: #604b77;
+    margin: 15px 0;
+}
+
+.promotions p {
+    margin-bottom: 22px;
+    line-height: 1.7;
+}
+
+.promotions img {
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* NOSOTROS */
+.about {
+    padding: 75px 8%;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.about-image img {
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.about h2 {
+    color: #665078;
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.about p {
+    color: #82778a;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* HORARIOS */
+.horario {
+    max-width: 650px;
+    margin: auto;
+    line-height: 2.2;
+}
+
+/* CONTACTO */
+.contact {
+    padding: 70px 8%;
+    background: #fceaf5;
+}
+
+.contact-info {
+    max-width: 550px;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    line-height: 2.4;
+    box-shadow: 0 5px 20px #bda9d52b;
+}
+
+/* INTEGRANTES */
+.team {
+    text-align: center;
+    padding: 75px 20px;
+    background: linear-gradient(120deg, #e9e5ff, #fce3f1);
+}
+
+.team h2 {
+    color: #665078;
+    font-size: 35px;
+    margin: 15px 0 30px;
+}
+
+.team-card {
+    background: white;
+    max-width: 320px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #a98bb933;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-7px);
+}
+
+.team-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    color: #bd6cae;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    color: #82778a;
+}
+
+.team-message {
+    margin-top: 25px;
+    color: #665078;
+    font-style: italic;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #665078;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    line-height: 2;
+}
+
+footer h2 {
+    color: #ffd6ed;
+    font-size: 28px;
+}
+
+footer a {
+    color: #ffd6ed;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 750px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 390px;
+    }
+
+    .promotions,
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promotions img,
+    .about-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
